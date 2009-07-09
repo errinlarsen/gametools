@@ -1,0 +1,5 @@
+<% title 'Dominion' %>
+
+<% for card in @cards %>
+	<%= link_to card.dname, dominion_path( card ) %><br />
+<% end %>

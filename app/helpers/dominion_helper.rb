@@ -1,0 +1,2 @@
+module DominionHelper
+end
