@@ -9,5 +9,9 @@ class DominionController < ApplicationController
   def show
   	@card = DominionCard.find( params[:id] )
   end
+  
+  def reload
+  	redirect_to :index
+  end
 
 end

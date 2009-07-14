@@ -1,5 +1,9 @@
 <% title 'Dominion' %>
 
+<ul>
+
 <% for card in @cards %>
-	<%= link_to card.dname, dominion_path( card ) %><br />
+	<li><%= link_to card.dname, dominion_path( card ) %></li>
 <% end %>
+
+</ul>

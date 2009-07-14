@@ -1,11 +1,6 @@
 <% title @card.dname %>
 
-<h2><%= @card.dname %></h2>
-<p>
-	<b>Cost:</b> <%= @card.cost %>
-</p>
-
-<p>
-	<b>Text:</b><br />
-	<%=	@card.text %>
-</p>
+<div id="show" class="panel" title=<%= @card.dname %> selected="true" >
+	<label>Cost: </label><%= @card.cost %><br />
+	<label>Text: </label><%= @card.text %>
+</div>
