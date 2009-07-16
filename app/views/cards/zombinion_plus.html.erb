@@ -1,0 +1,8 @@
+<% title 'Zombinion plus Entrails' %>
+<%= link_to 'Main Menu', gametools_path %>
+
+<ul>
+<% for card in @cards %>
+	<li><%= link_to card.name, gametool_path( card ) %> (<%= Card.find_by_id( card.id - 25 ).name %>)</li>
+<% end %>
+</ul>

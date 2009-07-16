@@ -1,0 +1,18 @@
+<% title @card.name %>
+<%= link_to 'Main Menu', gametools_path %>
+<h2><%= @card.name %></h2>
+
+<% if @card.type == 'S' %>
+	Number: 
+<% else %>
+	Cost: 
+<% end %>
+<%= @card.num %><br />
+Text: <br />
+<%= @text %>
+
+<p>
+<% if @card.type == 'S' %>
+	<%= link_to  "Flip another card!", { :action => :startplayer } %>
+<% end %>
+</p>
