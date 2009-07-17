@@ -1,9 +1,0 @@
-<% title 'Zombinion' %>
-
-<ul>
-
-<% for card in @cards %>
-	<li><%= link_to card.zname, zombinion_path( card ) %> <%= link_to "(#{card.dname})", dominion_path( card ) %></li>
-<% end %>
-
-</ul>
